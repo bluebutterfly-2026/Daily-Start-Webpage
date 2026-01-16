@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+    color: #4a2c3a;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #6a3b4d;
+}
+
+#clock {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#quote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6a3b4d;
+}
+
+/* ===== Main Layout ===== */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ===== Card Base ===== */
+.card {
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== Card Color Themes ===== */
+
+/* Daily Links – Lavender */
+.links-card {
+    background: #ede7f6;
+}
+
+/* Today's Tasks – Light Green */
+.tasks-card {
+    background: #e8f5e9;
+}
+
+/* Number Converter – Light Orange */
+.converter-card {
+    background: #fff3e0;
+}
+
+/* Calculator – Sky Blue */
+.calculator-card {
+    background: #e3f2fd;
+}
+
+/* ===== Headings ===== */
+h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #5a2a4a;
+}
+
+/* ===== Links ===== */
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 8px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #7b1fa2;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Inputs ===== */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #f3b6c9;
+    font-size: 0.95rem;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 8px 14px;
+    background: #ec407a;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    background: #d81b60;
+}
+
+/* ===== Todo List ===== */
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+#todoList li {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* ===== Calculator ===== */
+#calcDisplay {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: right;
+    border-radius: 6px;
+    border: 1px solid #90caf9;
+    background: #ffffff;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.calculator button {
+    padding: 10px;
+    font-size: 1rem;
+    background: #64b5f6;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.calculator button:hover {
+    background: #42a5f5;
+}
+
+.calculator .clear {
+    grid-column: span 4;
+    background: #1e88e5;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #6a3b4d;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Start Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>My Daily Start Page</h1>
+    <p class="subtitle">First-Year • Computer Science Student</p>
+    <div id="clock"></div>
+    <div id="quote"></div>
+</header>
+
+<main>
+    <section class="card links-card">
+        <h2>Daily Links</h2>
+        <ul class="links">
+            <li><a href="https://rctc.learn.minnstate.edu/d2l/home" target="_blank">D2L</a></li>
+            <li><a href="https://outlook.office365.com/" target="_blank">Outlook</a></li>
+            <li><a href="https://mail.google.com" target="_blank">Email</a></li>
+            <li><a href="https://calendar.google.com" target="_blank">Google Calendar</a></li>
+            <li><a href="https://www.coursera.org" target="_blank">Coursa</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
+            <li><a href="https://open.spotify.com/" target="_blank">Spotify</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        </ul>
+    </section>
+
+    <section class="card tasks-card">
+        <h2>Today’s Tasks</h2>
+        <input type="text" id="todoInput" placeholder="Add an assignment or reminder">
+        <button onclick="addTodo()">Add</button>
+        <ul id="todoList"></ul>
+    </section>
+
+    <section class="card converter-card">
+        <h2>Number Converter</h2>
+        <input type="number" id="decimalInput" placeholder="Enter decimal number">
+        <button onclick="convertNumber()">Convert</button>
+        <p>Binary: <span id="binaryOutput">---</span></p>
+        <p>Hex: <span id="hexOutput">---</span></p>
+    </section>
+
+    <section class="card calculator-card">
+        <h2>Calculator</h2>
+        <input type="text" id="calcDisplay" readonly>
+
+        <div class="calculator">
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/')">÷</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendValue('+')">+</button>
+
+            <button class="clear" onclick="clearDisplay()">Clear</button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Daily links and tasks page.</p>
+</footer>
+</body>
+</html>
